@@ -18,7 +18,6 @@ public class Solution {
         if (number % 2 == 0) {
             for (int i = array.length - 1; i >= 0; i--) {
                 System.out.println(array[i]);
-
             }
 
         } else {
