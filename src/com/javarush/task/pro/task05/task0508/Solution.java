@@ -14,10 +14,9 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
 
         strings = new String[6];
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < strings.length; i++) {
             strings[i] = scanner.nextLine();
         }
-
         for (int i = 0; i < strings.length; i++) {
             String str = strings[i];
             for (int j = i + 1; j < strings.length; j++) {
