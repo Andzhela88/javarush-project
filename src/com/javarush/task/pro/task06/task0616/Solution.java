@@ -5,17 +5,17 @@ package com.javarush.task.pro.task06.task0616;
 */
 
 public class Solution {
-    public static final String name = "Amigo";
-    public static String position = "Java developer";
-    public static int salary = 10_000;
+    public final String name = "Amigo";
+    public String position = "Java developer";
+    public int salary = 10_000;
 
     public void setPosition(String position) {
 
-        position = Solution.position;
+        this.position = position;
     }
 
     public void setSalary(int salary) {
 
-        salary = Solution.salary;
+        this.salary = salary;
     }
 }

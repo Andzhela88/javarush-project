@@ -4,6 +4,8 @@ package com.javarush.task.pro.task06.task0605;
 Правильный порядок
 */
 
+import java.util.Arrays;
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -15,7 +17,21 @@ public class Solution {
 
     public static void reverseArray(int[] array) {
         //напишите тут ваш код
+      /*  int [] copyArray = new int[array.length];
+        for (int i = 0; i < array.length ; i++) {
+            copyArray[i] = array[array.length - 1 - i];
+        }
+        for (int i = 0; i < copyArray.length; i++) {
+            array[i] = copyArray[i];
+        }*/
 
+        for (int i = 0; i < array.length/2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 -i] = temp;
+
+
+        }
     }
 
     public static void printArray(int[] array) {
